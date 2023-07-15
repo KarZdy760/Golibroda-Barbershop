@@ -14,7 +14,6 @@ body {
 }
 
 .background-image {
-  position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -39,6 +38,8 @@ body {
     background-image: url(zdjecia/tlo4.png);
   }
 }
+
+/* HEADER */
 header {
   position: fixed;
   height: 100px;
@@ -126,3 +127,5 @@ header {
   display: block;
   margin-right: 20px;
 }
+
+/* Footer */
