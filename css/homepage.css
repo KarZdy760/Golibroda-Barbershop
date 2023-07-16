@@ -1,0 +1,36 @@
+section#wrapper {
+  width: 100%;
+}
+
+section#introduce {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 360px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(231, 180, 96, 0.6);
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.title {
+  height: 200px;
+  padding: 50px 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "Brush Script MT", cursive;
+  /* color: rgb(231, 180, 96); */
+  color: white;
+}
+
+h3 {
+  font-size: 1rem;
+  /* color: rgb(231, 180, 96); */
+  color: white;
+}
