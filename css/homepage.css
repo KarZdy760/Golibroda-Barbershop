@@ -20,7 +20,8 @@ section#wrapper {
   /* color: white; */
 }
 
-section#about-us {
+section#about-us,
+section#our-services {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   width: 100%;
@@ -32,8 +33,10 @@ section#about-us {
   padding-bottom: 50px;
   padding-top: 15px;
   line-height: 1.7em;
+  padding-bottom: 50px;
 }
-section#about-us span {
+section#about-us span,
+section#our-services span {
   font-weight: 700;
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   color: rgb(231, 180, 96);
@@ -58,7 +61,7 @@ p {
 
 section#promotion {
   width: 100%;
-  height: 280px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +92,25 @@ section#promotion .usluga {
   font-weight: 600;
   color: #2c2d34;
   margin-top: 15px;
-  padding: 20px;
+  padding: 20px 60px;
   border: 2px solid white;
   text-transform: none;
+}
+
+section#our-services {
+  margin-top: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.our-services-picture {
+  width: 100%;
+  overflow: hidden;
+}
+
+.our-services-picture .our-services-photo {
+  object-fit: cover;
+  width: 90%;
+  height: 350px;
+  box-shadow: 10px 10px 1px 1px #444f72c7;
 }
