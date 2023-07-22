@@ -55,3 +55,41 @@ p {
   width: 90%;
   box-shadow: 10px 10px 1px 1px #444f72c7;
 }
+
+section#promotion {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: rgb(212, 163, 83);
+}
+
+section#promotion span {
+  display: block;
+  color: #2c2d34;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+section#promotion h2 {
+  display: block;
+  font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
+  max-width: 20em;
+  font-weight: 500;
+}
+
+section#promotion .usluga {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  color: #2c2d34;
+  margin-top: 15px;
+  padding: 20px;
+  border: 2px solid white;
+  text-transform: none;
+}
