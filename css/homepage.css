@@ -17,6 +17,8 @@ section#wrapper {
   font-size: 3.2rem;
   color: #fffdf6;
   font-family: "Brush Script MT", cursive;
+  /* font-family: 'Playfair Display'; */
+  text-shadow: 2px 2px 2px RGBA(0, 0, 0, 0.63);
   /* color: white; */
 }
 
@@ -113,4 +115,10 @@ section#our-services {
   width: 90%;
   height: 350px;
   box-shadow: 10px 10px 1px 1px #444f72c7;
+}
+
+.xD {
+  display: block;
+  width: 200px;
+  background: red;
 }
