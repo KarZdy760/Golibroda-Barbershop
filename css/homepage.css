@@ -23,7 +23,8 @@ section#wrapper {
 }
 
 section#about-us,
-section#our-services {
+section#our-services,
+section#for-kids {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   width: 100%;
@@ -38,10 +39,12 @@ section#our-services {
   padding-bottom: 50px;
 }
 section#about-us span,
-section#our-services span {
+section#our-services span,
+section#for-kids span {
   font-weight: 700;
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   color: rgb(231, 180, 96);
+  text-transform: uppercase;
 }
 p {
   font-size: 1.1rem;
@@ -117,8 +120,7 @@ section#our-services {
   box-shadow: 10px 10px 1px 1px #444f72c7;
 }
 
-.xD {
-  display: block;
-  width: 200px;
-  background: red;
+.for-kids-photo {
+  width: 90%;
+  box-shadow: 10px 10px 1px 1px #444f72c7;
 }
