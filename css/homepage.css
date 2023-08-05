@@ -46,6 +46,12 @@ section#for-kids span {
   color: rgb(231, 180, 96);
   text-transform: uppercase;
 }
+
+.about-us-text {
+  width: 98%;
+  position: relative;
+}
+
 p {
   font-size: 1.1rem;
   margin-block-start: 1em;
@@ -56,12 +62,44 @@ p {
   color: rgb(255, 255, 255);
   font-weight: 300;
   text-align: left;
+  position: relative;
+}
+
+.about-us-text::before,
+.about-us-text::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+}
+
+.about-us-text::before {
+  border-left: 3px solid rgb(255, 255, 255);
+  border-top: 3px solid rgb(243, 171, 54);
+  left: 0px;
+}
+
+.about-us-text::after {
+  bottom: -5px;
+  right: 2px;
+  border-right: 3px solid rgb(247, 247, 247);
+  border-bottom: 3px solid rgb(243, 171, 54);
+}
+
+.about-us-text p {
+  padding: 5px;
 }
 
 .abt-us-photo {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 90%;
-  box-shadow: 10px 10px 1px 1px #444f72c7;
+  box-shadow: -10px -20px 1px 1px rgb(199, 146, 60, 0.8);
+  position: relative;
+}
+
+.abt-us-photo::before {
+  content: "";
+  position: absolute;
 }
 
 section#promotion {
@@ -94,12 +132,13 @@ section#promotion .usluga {
   text-align: center;
   justify-content: center;
   text-align: center;
-  font-weight: 600;
-  color: #2c2d34;
+  font-weight: 700;
   margin-top: 15px;
   padding: 20px 60px;
   border: 2px solid white;
   text-transform: none;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 section#our-services,
@@ -118,12 +157,12 @@ section#for-kids {
   object-fit: cover;
   width: 90%;
   height: 350px;
-  box-shadow: 10px 10px 1px 1px #444f72c7;
+  box-shadow: 10px 10px 1px 1px rgba(199, 146, 60, 0.8);
 }
 
 .for-kids-photo {
   width: 90%;
-  box-shadow: 10px 10px 1px 1px #444f72c7;
+  box-shadow: 10px 10px 1px 1px rgba(199, 146, 60, 0.8);
 }
 
 section#for-kids {
