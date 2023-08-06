@@ -166,5 +166,10 @@ section#for-kids {
 }
 
 section#for-kids {
-  margin-bottom: 300px;
+  margin-bottom: 800px;
+}
+
+.follow-icon {
+  margin-right: 20px;
+  width: 40px;
 }
