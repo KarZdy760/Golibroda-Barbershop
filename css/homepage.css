@@ -9,23 +9,49 @@ section#wrapper {
   margin-top: 20px;
   text-align: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(231, 180, 96, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: animation 15s infinite ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.title::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(231, 180, 96, 0.6);
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    background-image: url(../zdjecia/tlo5.jpg);
+  }
+  25% {
+    background-image: url(../zdjecia/tlo2.jpg);
+  }
+  50% {
+    background-image: url(../zdjecia/tlo3.jpg);
+  }
+  75% {
+    background-image: url(../zdjecia/tlo4.png);
+  }
 }
 
 .title h1 {
   font-size: 3.2rem;
   color: #fffdf6;
   font-family: "Brush Script MT", cursive;
-  /* font-family: 'Playfair Display'; */
   text-shadow: 2px 2px 2px RGBA(0, 0, 0, 0.63);
-  /* color: white; */
+  /* color: rgb(231, 180, 96); */
+  position: relative;
+  z-index: 1;
 }
 
 section#about-us,
 section#our-services,
 section#for-kids {
-  background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   width: 100%;
   margin-top: 20px;
@@ -59,7 +85,7 @@ p {
   margin-left: 4%;
   word-wrap: break-word;
   /* color: rgb(231, 180, 96); */
-  color: rgb(255, 255, 255);
+  color: #1d2434;
   font-weight: 300;
   text-align: left;
   position: relative;
@@ -74,16 +100,16 @@ p {
 }
 
 .about-us-text::before {
-  border-left: 3px solid rgb(255, 255, 255);
-  border-top: 3px solid rgb(243, 171, 54);
+  border-left: 3px solid #1d2434;
+  border-top: 3px solid #1d2434;
   left: 0px;
 }
 
 .about-us-text::after {
   bottom: -5px;
   right: 2px;
-  border-right: 3px solid rgb(247, 247, 247);
-  border-bottom: 3px solid rgb(243, 171, 54);
+  border-right: 3px solid #1d2434;
+  border-bottom: 3px solid #1d2434;
 }
 
 .about-us-text p {
