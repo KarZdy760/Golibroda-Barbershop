@@ -72,9 +72,8 @@ header {
   width: 200px;
   height: 54vh;
   transition: all 0.4s ease;
-  border: 2px solid gray;
   margin-top: 1px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .nav-bar a {
@@ -88,12 +87,17 @@ header {
   color: white;
 }
 
-.nav-bar a::after {
-  content: "";
+.nav-bar a.active {
+  position: relative;
 }
-.nav-bar a:is(:link, :active, :visited).active {
-  margin-top: 10px;
-  padding: 25px 15px 17px 15px;
+
+.nav-bar a.active::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: -10px;
+  width: 40%;
+  border-bottom: 2px solid rgba(231, 180, 96);
 }
 
 .nav-bar.open {
@@ -175,4 +179,37 @@ footer span {
   text-align: center;
   font-size: 10px;
   color: white;
+}
+
+@media (min-width: 800px) {
+  .logo {
+    margin: 0px;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    transition: none;
+    margin-top: 1px;
+    background: none;
+  }
+
+  .nav-bar a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0px;
+    padding: 0px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    white-space: nowrap;
+  }
+
+  .menu-icon {
+    display: none;
+  }
 }
