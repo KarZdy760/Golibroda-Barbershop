@@ -95,7 +95,7 @@ header {
   content: "";
   position: absolute;
   left: 30%;
-  bottom: -10px;
+  bottom: 6px;
   width: 40%;
   border-bottom: 2px solid rgba(231, 180, 96);
 }
@@ -211,5 +211,12 @@ footer span {
 
   .menu-icon {
     display: none;
+  }
+
+  .nav-bar a.active::before {
+    left: 30%;
+    bottom: -10px;
+    width: 40%;
+    border-bottom: 2px solid rgba(231, 180, 96);
   }
 }
