@@ -14,7 +14,7 @@ body {
   padding-top: 100px;
 }
 
-.background-image {
+.wrapper {
   position: absolute;
   background-color: #f8f9fa;
   width: 100%;
@@ -149,6 +149,7 @@ footer {
   text-align: left;
   margin-top: 40px;
   margin-left: 20px;
+  height: auto;
 }
 
 .footer-icon {
@@ -218,5 +219,23 @@ footer span {
     bottom: -10px;
     width: 40%;
     border-bottom: 2px solid rgba(231, 180, 96);
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    height: 450px;
+  }
+
+  .row::before {
+    display: none;
+  }
+  .row {
+    flex-direction: row;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
 }

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   height: 200px;
-  margin-top: 20px;
   text-align: center;
   width: 100%;
   background-repeat: no-repeat;
@@ -48,7 +47,7 @@ section#our-services span,
 section#for-kids span {
   font-weight: 700;
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
-  color: rgb(231, 180, 96);
+  color: #1d2434;
   text-transform: uppercase;
 }
 
@@ -153,7 +152,7 @@ section#for-kids {
   padding-bottom: 50px;
 }
 
-.our-services-picture {
+section#our-services .picture-container {
   width: 100%;
   overflow: hidden;
 }
@@ -198,15 +197,70 @@ section#for-kids {
     font-size: 1.4rem;
   }
 
-  .abt-us-photo {
+  .abt-us-photo,
+  .for-kids-photo,
+  .our-services-photo {
     width: 600px;
   }
   .our-services-photo {
     height: 500px;
-    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    height: 600px;
   }
 
-  .for-kids-photo {
-    width: 600px;
+  .title::before {
+    height: 600px;
+  }
+
+  .title h1 {
+    font-size: 5rem;
+  }
+
+  section#about-us,
+  section#our-services,
+  section#for-kids {
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about-us-text {
+    height: auto;
+    width: 30%;
+    box-sizing: border-box;
+    margin-left: 5%;
+    padding-right: 30px;
+  }
+
+  .picture-container {
+    margin-right: 20px;
+  }
+
+  .about-us-text::after {
+    bottom: -10px;
+  }
+
+  .about-us-text p span {
+    font-size: 1.8rem;
+  }
+
+  section#our-services .picture-container {
+    width: 40%;
+  }
+  section#our-services .about-us-text {
+    margin-left: 0px;
+  }
+  section#for-kids {
+    margin-bottom: 450px;
+  }
+
+  section#promotion {
+    height: 250px;
   }
 }
