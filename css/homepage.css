@@ -1,3 +1,11 @@
+.title::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(231, 180, 96, 0.6);
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -10,13 +18,6 @@
   background-image: url("../zdjecia/tlo5.jpg");
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
-.title::before {
-  content: "";
-  position: absolute;
-  height: 200px;
-  width: 100%;
-  background-color: rgba(231, 180, 96, 0.6);
-}
 
 .title h1 {
   font-size: 3.2rem;
@@ -28,9 +29,9 @@
   z-index: 1;
 }
 
-section#about-us,
-section#our-services,
-section#for-kids {
+.about-us,
+.our-services,
+.for-kids {
   position: relative;
   width: 100%;
   margin-top: 20px;
@@ -42,9 +43,10 @@ section#for-kids {
   padding-bottom: 50px;
   background: rgb(230, 228, 228);
 }
-section#about-us span,
-section#our-services span,
-section#for-kids span {
+
+.about-us span,
+.our-services span,
+.for-kids span {
   font-weight: 700;
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   color: #1d2434;
@@ -106,7 +108,7 @@ p {
   position: absolute;
 }
 
-section#promotion {
+.promotion {
   width: 100%;
   height: 350px;
   display: flex;
@@ -116,7 +118,7 @@ section#promotion {
   background: rgb(212, 163, 83);
 }
 
-section#promotion span {
+.promotion span {
   display: block;
   color: #2c2d34;
   font-weight: 800;
@@ -124,14 +126,14 @@ section#promotion span {
   text-transform: uppercase;
 }
 
-section#promotion h2 {
+.promotion h2 {
   display: block;
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   max-width: 20em;
   font-weight: 500;
 }
 
-section#promotion .usluga {
+.promotion .usluga {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -145,14 +147,14 @@ section#promotion .usluga {
   text-transform: uppercase;
 }
 
-section#our-services,
-section#for-kids {
+.our-services,
+.for-kids {
   margin-top: 0;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-section#our-services .picture-container {
+.our-services .picture-container {
   width: 100%;
   overflow: hidden;
 }
@@ -169,7 +171,7 @@ section#our-services .picture-container {
   box-shadow: 10px 10px 1px 1px rgba(199, 146, 60, 0.8);
 }
 
-section#for-kids {
+.for-kids {
   margin-bottom: 800px;
 }
 
@@ -191,9 +193,9 @@ section#for-kids {
     width: 80%;
   }
 
-  section#about-us p,
-  section#our-services p,
-  section#for-kids p {
+  .about-us p,
+  .our-services p,
+  .for-kids p {
     font-size: 1.4rem;
   }
 
@@ -220,9 +222,9 @@ section#for-kids {
     font-size: 5rem;
   }
 
-  section#about-us,
-  section#our-services,
-  section#for-kids {
+  .about-us,
+  .our-services,
+  .for-kids {
     display: flex;
     height: auto;
     align-items: center;
@@ -250,17 +252,17 @@ section#for-kids {
     font-size: 1.8rem;
   }
 
-  section#our-services .picture-container {
+  .our-services .picture-container {
     width: 40%;
   }
-  section#our-services .about-us-text {
+  .our-services .about-us-text {
     margin-left: 0px;
   }
-  section#for-kids {
+  .for-kids {
     margin-bottom: 450px;
   }
 
-  section#promotion {
+  .promotion {
     height: 250px;
   }
 }
