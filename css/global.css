@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   box-sizing: border-box;
   color: white;
 }
@@ -30,11 +30,12 @@ header {
 
 p {
   font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
+  color: #1d2434;
 }
 
 .wrapper {
   position: absolute;
-  background-color: #f8f9fa;
+  background-color: #e7e7e7;
   width: 100%;
   min-height: 100vh;
 }
