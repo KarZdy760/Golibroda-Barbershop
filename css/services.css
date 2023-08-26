@@ -181,10 +181,25 @@ tr {
     width: 60%;
     bottom: -100px;
   }
+  .picture-container {
+    margin-bottom: 20%;
+  }
 }
 
 @media (min-width: 1350px) {
   .picture-container .services-photo-n2 {
-    bottom: -300px;
+    bottom: -150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .picture-container .services-photo-n2 {
+    bottom: -230px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .picture-container .services-photo-n2 {
+    bottom: -280px;
   }
 }
