@@ -104,27 +104,27 @@ p {
 }
 
 .promotion {
-  width: 100%;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  height: 350px;
   background: rgb(212, 163, 83);
 }
 
 .promotion span {
   display: block;
-  font-weight: 800;
+  color: #2c2d34;
   font-size: 24px;
   text-transform: uppercase;
-  color: #2c2d34;
+  font-weight: 800;
 }
 
 .promotion h2 {
-  font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   display: block;
   max-width: 20em;
+  font-family: "Kumbh Sans", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 500;
 }
 
@@ -135,9 +135,9 @@ p {
   margin-top: 15px;
   padding: 20px 60px;
   font-size: 30px;
-  font-weight: 700;
   text-transform: uppercase;
   border: 2px solid white;
+  font-weight: 700;
 }
 
 .our-services,
