@@ -173,13 +173,17 @@ tr {
   .what-we-offer {
     margin-bottom: 450px;
   }
+
+  .title {
+    min-height: 60vh;
+  }
   .picture-container .services-photo-n2 {
     width: 60%;
     bottom: -100px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .picture-container .services-photo-n2 {
     bottom: -300px;
   }
