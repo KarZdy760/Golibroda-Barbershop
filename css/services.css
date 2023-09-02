@@ -22,13 +22,13 @@
 
 .title h1 {
   position: relative;
-  font-family: "Khand", Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Libre Baskerville" !important;
   white-space: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
   z-index: 1;
 }
 

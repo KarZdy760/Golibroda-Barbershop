@@ -33,7 +33,7 @@ p {
 
 .title h1 {
   position: relative;
-  font-family: "Brush Script MT", cursive;
+  font-family: "Libre Baskerville" !important;
   color: #fffdf6;
   font-size: 3.2rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);

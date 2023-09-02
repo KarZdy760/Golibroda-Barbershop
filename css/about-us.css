@@ -1,0 +1,145 @@
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../zdjecia/about-us-banner.jpg");
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.title h1 {
+  position: relative;
+  font-family: "Libre Baskerville" !important;
+  white-space: normal;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.title h1 span {
+  font-family: "Libre Baskerville" !important;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
+  color: #c09538;
+  font-weight: 700;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.section-heading {
+  width: 100%;
+  text-align: left;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: rgb(31, 29, 29);
+  margin-bottom: 2rem;
+}
+
+.main-content_text {
+  width: 90%;
+  text-align: left;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.promotion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  background: rgb(192, 149, 56);
+}
+
+.promotion h2 {
+  display: block;
+  color: #121213;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 700;
+}
+
+.promotion a {
+  margin-top: 2rem;
+  font-size: 30px;
+  padding: 20px 60px;
+  text-shadow: 1px 1px 1px black;
+  border: 2px dotted white;
+  font-weight: 700;
+}
+
+.our-team {
+  margin-top: 6rem;
+  margin-bottom: 800px;
+}
+
+.section-title {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.section-title h1 {
+  text-transform: uppercase;
+  color: rgb(31, 29, 29);
+  font-family: "Libre Baskerville";
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.member-of-the-team-photo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.member-of-the-team-picture {
+  width: 90%;
+  box-shadow: 5px 5px 2px rgb(182, 177, 177);
+}
+
+.member-of-the-team {
+  width: 100%;
+  text-align: left;
+}
+
+.member-name {
+  font-family: Kristi;
+  margin-left: 1rem;
+  margin-top: 30px;
+  letter-spacing: 6px;
+  font-size: 4rem;
+  color: rgba(192, 149, 56, 0.7);
+}
+
+.about-member {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 90%;
+}
+
+.member-of-the-team-picture-2 {
+  height: 350px;
+  margin-top: 30px;
+}
