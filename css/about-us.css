@@ -28,7 +28,7 @@
   font-family: "Libre Baskerville" !important;
   font-size: 1.2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.63);
-  color: #c09538;
+  color: rgb(192, 149, 56);
   font-weight: 700;
 }
 
@@ -44,7 +44,8 @@
 }
 
 .section-heading h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-family: "Satisfy", cursive;
   padding-left: 20px;
   text-transform: uppercase;
   color: rgb(31, 29, 29);
@@ -74,34 +75,42 @@
   font-size: 24px;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px black;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .promotion a {
   margin-top: 2rem;
   font-size: 30px;
   padding: 20px 60px;
-  text-shadow: 1px 1px 1px black;
-  border: 2px dotted white;
-  font-weight: 700;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  font-weight: 500;
+}
+
+.promotion a:hover {
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(12, 12, 12);
+  border: 2px solid rgb(12, 12, 12);
 }
 
 .our-team {
   margin-top: 6rem;
   margin-bottom: 800px;
+  padding-bottom: 30px;
 }
 
 .section-title {
-  text-align: left;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 .section-title h1 {
   text-transform: uppercase;
-  color: rgb(31, 29, 29);
-  font-family: "Libre Baskerville";
-  font-size: 2rem;
   margin-bottom: 50px;
+  font-size: 3rem;
+  color: rgb(31, 29, 29);
+  font-family: "Satisfy", cursive;
+  font-weight: 700;
 }
 
 .member-of-the-team-photo-container {
@@ -110,36 +119,173 @@
   align-items: center;
   position: relative;
   width: 100%;
+  max-height: 450px;
   overflow: hidden;
 }
 
 .member-of-the-team-picture {
-  width: 90%;
-  box-shadow: 5px 5px 2px rgb(182, 177, 177);
+  width: 100%;
+  /* box-shadow: 5px 5px 2px rgb(182, 177, 177); */
 }
 
 .member-of-the-team {
-  width: 100%;
+  width: 90%;
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .member-name {
   font-family: Kristi;
-  margin-left: 1rem;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   margin-top: 30px;
   letter-spacing: 6px;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  word-wrap: break-word;
   color: rgba(192, 149, 56, 0.7);
 }
 
 .about-member {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 90%;
+  text-align: left;
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 30px;
 }
 
-.member-of-the-team-picture-2 {
-  height: 350px;
-  margin-top: 30px;
+@media (min-width: 600px) {
+  .section-heading h2 {
+    margin-left: 1rem;
+  }
+  .main-content_text {
+    font-size: 1.1rem;
+  }
+
+  .member-of-the-team-picture {
+    width: 90%;
+  }
+  .member-of-the-team-photo-container {
+    max-height: 550px;
+  }
+  .member-of-the-team {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .about-member {
+    padding-top: 30px;
+    margin-bottom: 100px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-heading {
+    text-align: center;
+  }
+  .main-content_text {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .member-of-the-team-photo-container {
+    max-height: 650px;
+  }
+
+  .member-of-the-team {
+    width: 90%;
+  }
+  .member-name {
+    margin-left: 0.5rem;
+  }
+  .about-member {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-heading h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+  .main-content_text {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .main-content_text p {
+    width: 80%;
+  }
+
+  .member-of-the-team {
+    display: flex;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+
+  .member-of-the-team-photo-container {
+    height: 400px;
+    width: 600px;
+    max-height: none;
+    margin-bottom: 0px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .member-of-the-team-photo-container:first-child {
+    margin-bottom: 80px;
+  }
+  .about-member {
+    position: relative;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .about-member p {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .member-name {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .member-of-the-team-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-team {
+    margin-bottom: 500px;
+    width: 80%;
+  }
+  .member-of-the-team-photo-container {
+    height: 500px;
+    width: 800px;
+  }
+  .about-member p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .our-team {
+    width: 70%;
+  }
+  .member-of-the-team-photo-container {
+    height: 600px;
+    width: 800px;
+  }
+  .about-member p {
+    width: 70%;
+    font-size: 1.2rem;
+  }
 }
