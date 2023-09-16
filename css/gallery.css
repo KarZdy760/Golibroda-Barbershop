@@ -80,3 +80,24 @@
   background: none;
   cursor: pointer;
 }
+
+.popup__arrow {
+  position: absolute;
+  top: 42%;
+  width: 120px;
+  height: 120px;
+  font-size: 60px;
+  line-height: 120px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.popup__arrow--left {
+  left: -11%;
+}
+
+.popup__arrow--right {
+  right: -11%;
+}
