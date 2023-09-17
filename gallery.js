@@ -31,19 +31,27 @@ THUMBNAILS.forEach((e, index) => {
   });
 });
 
-POPUP_CLOSE.addEventListener("click", () => {
+const closePopup = () => {
   POPUP.classList.add("hidden");
-});
+};
+
+POPUP_CLOSE.addEventListener("click", closePopup);
 
 POPUP_ARROW_LEFT.addEventListener("click", beforeImg);
 
 POPUP_ARROW_RIGHT.addEventListener("click", nextImg);
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "POPUP_ARROW_RIGHT" || e.keyCode === 39) {
-    nextImg();
-  }
-  if (e.key === "POPUP_ARROW_LEFT" || e.keyCode === 37) {
-    beforeImg();
+  if (!POPUP.classList.contains("hidden")) {
+    if (e.key === "POPUP_ARROW_RIGHT" || e.keyCode === 39) {
+      nextImg();
+    }
+    if (e.key === "POPUP_ARROW_LEFT" || e.keyCode === 37) {
+      beforeImg();
+    }
+
+    if (e.key === "Escape" || e.keyCode === 27) {
+      closePopup();
+    }
   }
 });
