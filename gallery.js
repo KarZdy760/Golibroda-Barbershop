@@ -5,6 +5,8 @@ const POPUP_IMG = document.querySelector(".popup__img");
 const POPUP_ARROW_LEFT = document.querySelector(".popup__arrow--left");
 const POPUP_ARROW_RIGHT = document.querySelector(".popup__arrow--right");
 let currentImgIndex;
+let currentArrowIndex = 0;
+const SLIDE_DELAY = 3000;
 
 const nextImg = () => {
   if (currentImgIndex === THUMBNAILS.length + 1) {
@@ -30,6 +32,11 @@ THUMBNAILS.forEach((e, index) => {
     currentImgIndex = index;
   });
 });
+
+// const nextThumbnail = () => {
+//   POPUP_ARROW
+
+// };
 
 const closePopup = () => {
   POPUP.classList.add("fade-out");
