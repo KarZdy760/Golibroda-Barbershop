@@ -32,7 +32,11 @@ THUMBNAILS.forEach((e, index) => {
 });
 
 const closePopup = () => {
-  POPUP.classList.add("hidden");
+  POPUP.classList.add("fade-out");
+  setTimeout(() => {
+    POPUP.classList.add("hidden");
+    POPUP.classList.remove("fade-out");
+  }, 200);
 };
 
 POPUP_CLOSE.addEventListener("click", closePopup);
@@ -53,5 +57,11 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" || e.keyCode === 27) {
       closePopup();
     }
+  }
+});
+
+POPUP.addEventListener("click", (e) => {
+  if (e.target === POPUP) {
+    closePopup();
   }
 });
