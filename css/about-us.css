@@ -71,27 +71,26 @@
 
 .promotion h2 {
   display: block;
-  color: #121213;
+  color: #2c2d34;
   font-size: 24px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px black;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .promotion a {
   margin-top: 2rem;
-  font-size: 30px;
   padding: 20px 60px;
-  text-shadow: 1px 1px 0 black;
+  font-size: 30px;
+  text-transform: uppercase;
   border: 2px solid white;
-  font-weight: 500;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 .promotion a:hover {
-  transition: 1s;
-  background: rgba(255, 255, 255, 0.2);
-  color: rgb(12, 12, 12);
-  border: 2px solid rgb(12, 12, 12);
+  background: rgba(88, 67, 33, 0.3);
 }
 
 .our-team {
