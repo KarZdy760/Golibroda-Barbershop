@@ -33,11 +33,6 @@ THUMBNAILS.forEach((e, index) => {
   });
 });
 
-// const nextThumbnail = () => {
-//   POPUP_ARROW
-
-// };
-
 const closePopup = () => {
   POPUP.classList.add("fade-out");
   setTimeout(() => {
