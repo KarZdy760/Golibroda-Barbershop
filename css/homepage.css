@@ -95,16 +95,25 @@ p {
 .for-kids .for-kids-photo {
   cursor: pointer;
 }
-.about-us .abt-us-photo {
-  position: relative;
-  width: 90%;
-  margin-top: 40px;
-  box-shadow: -10px -20px 1px 1px rgb(199, 146, 60, 0.8);
+
+.thumbnail-container {
+  width: 350px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
 }
 
-.about-us .abt-us-photo::before {
-  content: "";
-  position: absolute;
+.thumbnail {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: auto;
+  border: 1px solid rgb(199, 146, 60);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .promotion {
@@ -158,26 +167,8 @@ p {
   padding-bottom: 50px;
 }
 
-.our-services .picture-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.our-services .our-services-photo {
-  width: 90%;
-  height: 350px;
-  object-fit: cover;
-
-  box-shadow: 10px 10px 1px 1px rgba(199, 146, 60, 0.8);
-}
-
 .for-kids {
   margin-bottom: 800px;
-}
-
-.for-kids .for-kids-photo {
-  width: 90%;
-  box-shadow: 10px 10px 1px 1px rgba(199, 146, 60, 0.8);
 }
 
 .follow-icon {
@@ -249,13 +240,11 @@ p {
     font-size: 1.4rem;
   }
 
-  .about-us .abt-us-photo,
-  .our-services .our-services-photo,
-  .for-kids .for-kids-photo {
+  .thumbnail-container {
     width: 600px;
+    height: 500px;
   }
   .our-services .our-services-photo {
-    height: 500px;
   }
 }
 
@@ -286,12 +275,12 @@ p {
     height: auto;
     width: 30%;
     box-sizing: border-box;
-    margin-left: 5%;
+    margin-left: 0px;
     padding-right: 30px;
   }
 
-  .picture-container {
-    margin-right: 20px;
+  .thumbnail-container {
+    margin-right: 100px;
   }
 
   .about-us-text::after {
@@ -300,14 +289,6 @@ p {
 
   .about-us-text p span {
     font-size: 1.8rem;
-  }
-
-  .our-services .picture-container {
-    width: 40%;
-  }
-
-  .our-services .about-us-text {
-    margin-left: 0px;
   }
 
   .for-kids {
