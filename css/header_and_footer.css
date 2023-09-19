@@ -122,14 +122,6 @@ footer span {
   margin-left: 30px;
 }
 
-.phone-number {
-  cursor: pointer;
-}
-
-.phone-number:hover {
-  color: rgba(231, 180, 96);
-}
-
 .copyright {
   display: flex;
   justify-content: center;
