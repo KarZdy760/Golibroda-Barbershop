@@ -42,10 +42,11 @@
 }
 
 .nav-bar a:hover {
-  color: white;
+  color: rgba(231, 180, 96);
 }
 
 .nav-bar a.active {
+  color: white;
   position: relative;
 }
 
@@ -119,6 +120,14 @@ footer li {
 }
 footer span {
   margin-left: 30px;
+}
+
+.phone-number {
+  cursor: pointer;
+}
+
+.phone-number:hover {
+  color: rgba(231, 180, 96);
 }
 
 .copyright {

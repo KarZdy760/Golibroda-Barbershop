@@ -45,14 +45,6 @@ body {
   border-radius: 20px;
 }
 
-.gallery__thumbnail:first-child {
-  margin-top: 20px;
-}
-
-.gallery__thumbnail:last-child {
-  padding-bottom: 20px;
-}
-
 .gallery__thumbnail:hover {
   transform: scale(1.05);
 }
@@ -171,13 +163,6 @@ body {
   .popup__img {
     margin-top: 120px;
     padding-top: 50px;
-  }
-  .gallery__thumbnail:first-child {
-    margin-top: 0;
-  }
-
-  .gallery__thumbnail:last-child {
-    padding-bottom: 0;
   }
 }
 

@@ -189,6 +189,7 @@ p {
   background: rgba(0, 0, 0, 0.7);
   animation: fadeIn 0.2s;
   backdrop-filter: blur(10px);
+  z-index: 1;
 }
 .popup:fade-out {
   animation: fadeOut 0.2s both;
@@ -244,7 +245,9 @@ p {
     width: 600px;
     height: 500px;
   }
-  .our-services .our-services-photo {
+
+  .popup__close {
+    right: 20px;
   }
 }
 
@@ -297,5 +300,15 @@ p {
 
   .promotion {
     height: 250px;
+  }
+  .popup__img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .popup__close {
+    font-size: 40px;
+    top: 120px;
+    right: 200px;
   }
 }
